@@ -1,0 +1,25 @@
+name: Publish expose.html to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Create deploy directory
+        run: |
+          mkdir deploy
+          cp expose.html deploy/
+        working-directory: ${{ github.workspace }}
+
+      - name: Build and deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: deploy
