@@ -10,5 +10,5 @@ Response: No I would not unit test this because it requires other functions to b
 Response: Yes I would because it is a small enough function that doesn't require many of other functions to be working together.
 
 Links:
-https://jrivas112.github.io/Lab5_Starter/expose.html
+https://jrivas112.github.io/Lab5_Starter/expose.html <br>
 https://jrivas112.github.io/Lab5_Starter/explore.html
