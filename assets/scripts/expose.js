@@ -1,8 +1,7 @@
 // expose.js
 window.addEventListener('DOMContentLoaded', init);
-const jsConfetti = new JSConfetti();
 function init() {
-  jsConfetti.addConfetti()
+    const jsConfetti = new JSConfetti();
     var getSelect = document.querySelector("select");
     var getButton = document.querySelector("button");
     var getImg = document.querySelector('img[alt="No image selected"]');
